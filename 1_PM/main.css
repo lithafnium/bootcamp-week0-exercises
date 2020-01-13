@@ -1,0 +1,151 @@
+html, body{
+	font-family: 'Montserrat', sans-serif;
+/*	background-color: rgb(10, 25, 47)
+*/}
+
+.navWrapper{
+	height: 100%;
+	position: fixed; 
+	z-index: 2;
+	top: 0; 
+	left: 0; 
+	width: 300px; 
+}
+.sidenav {
+  height: 100%;
+  width: 600px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: -300px;
+  
+  overflow-x: hidden;
+
+  display: flex;
+  align-items: center;   /* <---- NEW    */
+
+
+
+  
+}
+
+.navsign{
+	height: 100%;
+	position: fixed;
+	top: 0; 
+	left: 30px;  
+	z-index: 3;
+	overflow-x: hidden;
+	display: flex;
+  	align-items: center;   
+  	transition: 0.3s;
+}
+
+.hamburger{
+	transition: 0.3s;
+}
+.bar{
+	width: 25px;
+  	height: 2px;
+  	background-color: rgba(0, 0, 0, 0.7);
+  	margin: 6px 0;
+  	transition: 0.3s;
+}
+
+.navWrapper:hover .navsign{
+	transform: translateX(-300px);
+}
+
+.navWrapper:hover .aboutNav{
+	transition-property: transform;
+	transform: translateX(300px);
+}
+
+.navWrapper:hover .softwareNav{
+	transition-property: transform;
+	transition-delay: 0.1s;
+	transform: translateX(300px);
+}
+
+.navWrapper:hover .photographyNav{
+	transition-property: transform;
+	transition-delay: 0.2s;
+	transform: translateX(300px);
+}
+.navWrapper:hover .contactNav{
+	transition-property: transform;
+	transition-delay: 0.3s;
+	transform: translateX(300px);
+}
+.sidenav a {
+  padding: 15px;
+  margin: 0px 20px 0px 20px ;
+  border-radius: 2px;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+  display: flex; 
+  align-items: center;
+}
+
+.dot {
+  height: 0.5rem; 
+  width: 0.5rem; 
+  margin-right: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover .dot{
+	transition-delay: 0s !important;
+	background-color: white !important;
+}
+
+.aboutNav:hover{
+	transition: background-color 0.3s !important;
+	background-color: #4285F4;
+	color: white !important;
+}
+
+.softwareNav:hover{
+	transition: background-color 0.3s !important;
+	background-color: #DB4437;
+	color: white !important;
+}
+
+.photographyNav:hover{
+	transition: background-color 0.3s !important;
+	background-color: #F4B400;; 
+	color: white !important;
+}
+
+.contactNav:hover{
+	transition: background-color 0.3s !important;
+	background-color: #0F9D58;
+	color: white !important;
+}
+
+.active .dot{
+	background-color: white !important;
+}
+
+.aboutActive{
+	background-color: #4285F4;
+	color: white !important;
+}
+
+.softwareActive{
+	background-color: #DB4437;; 
+	color: white !important;
+}
+
+.photographyActive{
+	background-color: #F4B400;; 
+	color: white !important;
+}
+
+.contactActive{
+	background-color: #0F9D58;
+	color: white !important;
+}

@@ -19,3 +19,14 @@ const getUser = callback => {
   };
   callback(user);
 };
+
+const getResult = user => {
+  coinToss(user.guess, alertWin); 
+}
+
+const alertWin = didwin => {
+  console.log( didwin); 
+}
+
+getUser(getResult); 
+

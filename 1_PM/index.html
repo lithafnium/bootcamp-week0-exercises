@@ -4,11 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
     <title>My Homepage!</title>
 </head>
 
 <body>
-    Build your website here!
+    <nav class = "navWrapper">
+		<div id="sideNav" class="sidenav my-auto">
+			<div>
+			  <a onClick = "about()" id = "aboutNav" style = "color: #4285F4" class = "aboutNav" href="#about"><span id = "aboutOption" style = "background-color: #4285F4;"class = "dot"></span>Novak Djokovic</a>
+			  <a onClick = "portfolio()" id = "softwareNav" style = "color: #DB4437" class = "softwareNav" href="#portfolio"><span id = "softwareOption" style = "background-color: #DB4437;" class = "dot"></span>Rafa Nadal </a>
+			  <a onClick = "photography()" id = "photographyNav" style = "color: #F4B400" class = "photographyNav" href="#"><span id = "photographyOption" style = "background-color:  #F4B400;" class = "dot"></span>Roger Federer</a>
+			  <a onClick = "contact()" id = "contactNav" style = "color: #0F9D58;" class = "contactNav" href="#contact"><span id = "photographyOption" style = "background-color:  #0F9D58;" class = "dot"></span>Stefanos Tsitsipas</a>
+			</div>
+		</div>
+		<div id = "menu" class = "navsign my-auto">
+			<div class = "hamburger">
+				<p class = "bar"></p>
+				<p class = "bar"></p>
+				<p class = "bar"></p>
+			</div>
+		</div>
+	</nav>
+    <header>
+        <h1>This is a website </h1>
+        <p style = "color: purple">this is purple</p>
+        <p style = "color: green">and this is green</p>
+    </header>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 </body>
 
 </html>
